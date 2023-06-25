@@ -12,6 +12,12 @@
 
 - To Run The `main.dart` [Main File] File Under The `lib` Folder, Please Type `flutter run` In Your Terminal Or Press `F5` In Visual Studio Code.
 
+- To Build The App, Please Type `flutter build apk` In Your Terminal. This Will Build The App In The `build` Folder.
+
+<h1>Packages Used</h1>
+
+- [google_fonts](https://pub.dev/packages/google_fonts)
+
 
 <h3>Developer</h3>
 
