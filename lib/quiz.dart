@@ -23,13 +23,20 @@ class _QuizState extends State<Quiz> {
     activeScreen = StartScreen(switchScreen);
   }
 
+  void restartQuiz() {
+    setState(() {
+      selectedAnswers = [];
+      activeScreen = QuestionsScreen(chooseAnswer);
+    });
+  }
+
   void chooseAnswer(String answer) {
     selectedAnswers.add(answer);
 
     if (selectedAnswers.length == questions.length) {
       setState(
         () {
-          activeScreen = ResultsScreen(selectedAnswers);
+          activeScreen = ResultsScreen(selectedAnswers, restartQuiz);
         },
       );
     }
